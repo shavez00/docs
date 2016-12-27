@@ -85,6 +85,13 @@ The external control services provided by ECP are included in a simple RESTful A
 **Note:** All URLs must be properly URL encoded for the command to succeed.
 Implementing ECP for Channel Developers
 
+## Roku TV ECP commands
+Roku TV devices additionally support the following external control services.
+Command | Description
+| query/tv-channels | Returns information about the TV channel / line-up available for viewing in the TV tuner UI.
+| query/tv-active-channel | Returns information about the currently tuned TV channel.
+| launch/tvinput.dtv | Launch the TV tuner UI.  Can optionally be passed a TV channel parameter of the form "ch=1.1" to tune to the specified TV channel number.
+
 ## Implementing Deep Linking in a Roku Channel
 All things related to ECP for channels are passed in as parameters to the initial function of a channel and stored in an Associative Array called args. An example of a typical implementation is shown below:
 
