@@ -86,11 +86,11 @@ The external control services provided by ECP are included in a simple RESTful A
 Implementing ECP for Channel Developers
 
 ## Roku TV ECP commands
+
 Roku TV devices additionally support the following external control services.
-| Command | Description | Example |
-| ------- | ----------- | ------- |
-| keypress/key | Equivalent to pressing down and releasing the remote control key identified after the slash. You can also use this command, and the keydown and keyup commands, to send keyboard alphanumeric characters when a keyboard screen is active, as described in Keypress Key Values. This command is sent using an HTTP POST with no body. | curl -d '' http://ROKU_IP_HERE:8060/keypress/home
+
 | Command | Description |
+| --- | --- |
 | query/tv-channels | Returns information about the TV channel / line-up available for viewing in the TV tuner UI.
 | query/tv-active-channel | Returns information about the currently tuned TV channel.
 | launch/tvinput.dtv | Launch the TV tuner UI.  Can optionally be passed a TV channel parameter of the form "ch=1.1" to tune to the specified TV channel number.
